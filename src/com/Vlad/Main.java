@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
 
         int[] myArray = readIntegers(5);
-        System.out.println("My new array is " + Arrays.toString(myArray));
+        System.out.println("Your new array is " + Arrays.toString(myArray));
         System.out.println("The smallest number in your array is " + findMin(myArray));
     }
 
