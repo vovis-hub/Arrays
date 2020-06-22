@@ -10,6 +10,7 @@ public class Main {
         int[] myArray = readIntegers(5);
         System.out.println("Your new array is " + Arrays.toString(myArray));
         System.out.println("The smallest number in your array is " + findMin(myArray));
+        System.out.println("Your reversed array is " + Arrays.toString(reverseArr(myArray)));
     }
 
     public static int[] readIntegers(int count) {
@@ -31,6 +32,16 @@ public class Main {
             }
         }
         return min;
+    }
+
+    public static int[] reverseArr(int[] arr) {
+        int[] revArray = new int[arr.length];
+        int x = 0;
+        for (int i = arr.length - 1; i >= 0; i--) {
+            revArray[x] = arr[i];
+            x++;
+        }
+        return revArray;
     }
 
 }
