@@ -23,7 +23,6 @@ public class Main {
         return arr;
     }
 
-
     public static int findMin(int[] arr) {
         int min = arr[0];
         for (int i = 1; i < arr.length; i++) {
